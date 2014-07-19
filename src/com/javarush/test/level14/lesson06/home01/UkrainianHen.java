@@ -7,6 +7,6 @@ public class UkrainianHen extends Hen
     }
 
     public String getDescription() {
-        return "Я курица.";
+        return super.getDescription() + " Моя страна - " + UKRAINE + ". Я несу " + this.getCountOfEggsPerMonth() + " яиц в месяц.";
     }
 }
