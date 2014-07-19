@@ -37,7 +37,19 @@ public class Solution
 
         static Hen getHen(String country) {
             Hen hen = null;
-            //add your code here
+
+            if (country.equals(Country.BELARUS)) {
+                hen = new BelarusianHen();
+            }
+            else if (country.equals(Country.MOLDOVA)) {
+                hen = new MoldovanHen();
+            }
+            else if (country.equals(Country.RUSSIA)) {
+                hen = new RussianHen();
+            }
+            else if (country.equals(Country.UKRAINE)) {
+                hen = new UkrainianHen();
+            }
             return hen;
         }
     }
