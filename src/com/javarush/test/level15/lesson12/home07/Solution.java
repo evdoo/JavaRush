@@ -16,7 +16,7 @@ public class Solution {
     static {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(Constants.FILE_NAME));
-            String line = null;
+            String line;
             while (reader.ready()) {
                 line = reader.readLine();
                 lines.add(line);
